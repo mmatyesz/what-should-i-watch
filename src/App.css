@@ -1,0 +1,245 @@
+body{
+  background-color: #0B0C10;
+  font-family: 'Roboto';
+  color: white;
+}
+h1{
+  color:#66FCF1;
+  font-size: 60px;
+  text-shadow: 4px 4px 0px #223c3f;
+  margin: 0px;
+  text-align: center;
+}
+h2{
+  color: #C5C6C7;
+  font-size: 45px;
+  text-align: center;
+  margin: 50px auto;
+}
+.container1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+.container2{
+  background-color: #13151b;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+}
+.scroll4more{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 25%;
+  right: 50px;
+  animation-name: fel_le;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+.stats{
+  display: flex;
+  flex-direction: column;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes fel_le {
+  0%{bottom: 25%}
+  50%{bottom: 28%}
+  100%{bottom: 25%}
+}
+
+h4{
+  padding: 5px;
+}
+
+b{
+  color: #66FCF1;
+  padding-left: 30px;
+}
+h3{
+  font-size: 20px;
+}
+.infoTitle{
+  padding: 30px;
+  text-align: left;
+}
+.infoSynop{
+  font-size: 25px;
+  text-align: justify;
+  padding: 30px;
+}
+.image_stats{
+  display: flex;
+  margin-left: 30px;
+}
+
+
+
+
+button{
+  cursor: pointer;
+  color: #444;
+  outline:0; 
+  font-size:1em;
+  font-weight:600;
+  background:#66FCF1;
+  border:none;
+  padding:2em 4em;
+  transition:all .3s ease-out; 
+  box-shadow:inset 0 -8px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #223c3f,
+    2px 2px 0 0 #223c3f,
+    3px 3px 0 0 #223c3f,
+    4px 4px 0 0 #223c3f,
+    5px 5px 0 0 #223c3f,
+    6px 6px 0 0 #223c3f,
+    7px 7px 0 0 #223c3f,
+    8px 8px 0 0 #223c3f,
+    9px 9px 0 0 #223c3f,
+    10px 10px 0 0 #223c3f,
+    11px 11px 0 0 #223c3f,
+    12px 12px 0 0 #223c3f;
+}
+button:hover{
+  color:rgb(32, 32, 32);
+}
+button:active{
+  color:black;
+  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #223c3f,
+    2px 2px 0 0 #223c3f,
+    3px 3px 0 0 #223c3f,
+    4px 4px 0 0 #223c3f,
+    5px 5px 0 0 #223c3f;
+}
+
+ion-icon{
+  padding: 10px;
+  color: #66FCF1;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.socials{
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+.socials img{
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+  h1{
+    font-size: 30px;
+  }
+  .infoTitle{
+    padding-top: 30px;
+    text-align: center;
+  }
+  h2{
+    font-size: 25px;
+  }
+  button{
+    cursor: pointer;
+    color: #444;
+    outline:0; 
+    font-size:.7em;
+    font-weight:600;
+    background:#66FCF1;
+    border:none;
+    padding:2em 4em;
+    transition:all .3s ease-out; 
+    box-shadow:inset 0 -8px 0 0 rgba(0,0,0,.2),
+      .5px .5px 0 0 #223c3f,
+      1px 1px 0 0 #223c3f,
+      2px 2px 0 0 #223c3f,
+      3px 3px 0 0 #223c3f,
+      4px 4px 0 0 #223c3f,
+      5px 5px 0 0 #223c3f,
+      6px 6px 0 0 #223c3f,
+      7px 7px 0 0 #223c3f,
+      8px 8px 0 0 #223c3f
+  }
+  .container1{
+    padding-top: 100px;
+  }
+  .container2{
+    height: auto;
+  }
+  .socials{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    left: 0px;
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+  }
+  .scroll4more{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 40%;
+    right: 8%;
+  }
+  @keyframes fel_le {
+    0%{bottom: 35%}
+    50%{bottom: 37%}
+    100%{bottom: 35%}
+  }
+  .image_stats{
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h3{
+    padding-top: 20px;
+    margin: 0px;
+  }
+  .infoSynop{
+    padding: 10px;
+    font-size: 18px;
+  }
+  b{
+    color: #66FCF1;
+    padding-left: 0px;
+  }
+}
